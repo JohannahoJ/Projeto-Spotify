@@ -1,0 +1,279 @@
+body {
+    background-color: #000000;
+}
+
+.icon {
+    /* margin: 16px 29px; */
+    margin-left: 17px;
+    margin-top: 12px;
+    width: 28px;
+}
+
+.box {
+    background-color: #121212;
+    border-radius: 5px;
+}
+
+.nav1 {
+    background-color: #101010;
+}
+
+.itens {
+    color: #b3b3b3;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.itens:hover {
+    color: #ffff;
+
+}
+
+.scroll {
+    overflow: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #878787 transparent;
+    width: 353px;
+    height: 125px;
+}
+
+.playlist {
+    padding: 15px 15px 15px 15px;
+    background-color: #242424;
+    border-radius: 9px;
+    margin-left: 5px;
+}
+
+.scroll:hover {
+    overflow: auto;
+}
+
+
+.botao {
+    padding: 5px 15px;
+    background-color: #ffff;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    padding: 6px 17px;
+    background-color: #f6f6f6;
+}
+
+.palavras {
+    color: #b3b3b3;
+    margin: 3px 0px 0px 3px;
+    font-size: 10px;
+    gap: 20px;
+
+}
+
+.portugues {
+    /* margin: 30px 160px 0px 20px; */
+    margin-left: 15px;
+    border-radius: 20px;
+    border: 1px solid #878787;
+    background-color: #121212;
+    color: #ffff;
+    padding: 3px 8px;
+}
+
+.portugues:hover {
+    padding: 4px 9px;
+    border-color: #f6f6f6;
+}
+
+.log {
+    padding: 17px 0px 0px 0px;
+}
+
+.box1 {
+    background-color: #121212;
+    border-radius: 5px;
+}
+
+.button {
+    border-radius: 30px;
+    padding: 11px 30px;
+    background-color: #ffff;
+    color: #000000;
+    font-size: 16px;
+    position: absolute;
+    right: 30px;
+    /* left: 91%; */
+    top: 2%;
+}
+
+.button:hover {
+    padding: 11px 32px;
+    background-color: #f6f6f6;
+    font-weight: bold;
+}
+
+.musicas {
+    background-color: #1E1E1E;
+    background-image: linear-gradient( #1F1F1F, #121212 25%);
+    margin-top: 5PX;
+}
+
+li {
+    list-style: none;
+}
+
+.white {
+    color: #ffff;
+}
+
+.gray {
+    color: #b3b3b3;
+}
+
+.inscreva {
+
+    font-weight: bold;
+    position: absolute;
+    right: 170px;
+    top: 3.5%;
+}
+
+.inscreva:hover {
+    font-size: 18px;
+    color: #ffff;
+}
+
+.mostrar:hover {
+    text-decoration: underline !important;
+    color: #b3b3b3;
+}
+
+.linha:hover {
+    text-decoration: underline !important;
+}
+
+.artista:hover {
+    background-color: #1f1f1f;
+    border-radius: 5px;
+}
+
+.limite {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.premiumGrates {
+    background-image: linear-gradient(to right, #af2896, #509bf5);
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+    position: fixed;
+    border-style: solid;
+    border-color: #000;
+    border-width: 5px;
+    /* margin: -3px -3px 5px -3px;
+    padding: 5px 0px 20px; */
+}
+
+.button1 {
+    border-radius: 30px;
+    border-color: #ffff;
+    border-style: solid;
+    padding: 11px 30px 5px 30px;
+    background-color: #ffff;
+    color: #000000;
+    font-size: 16px;
+    position: absolute;
+    right: 30px;
+    /* left: 91%; */
+    top: 7px;
+}
+
+.button1:hover {
+    padding: 12px 32px 5px 32px;
+    background-color: #f6f6f6;
+    font-weight: bold;
+}
+.marginFooter{
+    margin-left: 20px;
+}
+.redes{
+    background-color: #242424;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    
+}
+.redes:hover{
+    background-color: #878787;
+}
+hr{
+    background-color: #878787;
+}
+.itenFooter:hover{
+    color: #fff;
+    text-decoration: underline !important;
+    
+}
+.artista:hover .imgplay{
+    opacity: 100% !important;
+    
+}
+.imgplay:hover{
+    background-color: #3be477;
+    width: 51px;
+    height: 51px;
+}
+.imgplay{
+    opacity: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #20d45f;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    margin: 85px 0px 0px 85px;
+    transition: 0.2s;
+}
+.modal{
+    background-color: #282828;
+    width: 980px;
+    height: 640px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    border-radius: 10px;
+}
+.x{
+    border-radius: 50%;
+    background-color:#0c0c0c;
+    width: 32px;
+    height: 33px;
+    padding-left: 7px;
+    padding-top: 2px;
+}
+.idioma{
+    padding: 5px 0px 5px 10px;
+}
+.idioma:hover{
+    background-color: #3e3e3e;
+    
+}
+.fade1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}

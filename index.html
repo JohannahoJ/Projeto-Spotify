@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/icons8-spotify-32.png">
+    <title>Spotfy</title>
+</head>
+
+<body>
+    <!-- Left -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-6" style="position: fixed;">
+                <div class="box">
+                    <div class="row">
+                        <div class="row">
+                            <a href="#" class="d-flex text-decoration-none">
+                                <img class="icon" src="img/icons8-spotify.svg" alt="">
+                                <p class="white" style="margin-top: 26px;"><b>Spotify</b></p>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <a href="#" class="text-decoration-none ">
+                                    <img src="img/icons8-home (1).svg" alt="" style="margin-left: 17px;">
+                                    <span class="itens"><b>Início</b></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-2">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="img/icons8-search (1).svg" alt="" style="margin-left: 17px;">
+                                    <span class="itens"><b>Buscar</b></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box mt-2">
+                    <div class="row">
+                        <div class="col-md-12 mt-3">
+                            <div class="row">
+                                <div class="col-md-2 mb-3">
+                                    <img class="" src="img/icons8-library-50.png" alt=""
+                                        style="width: 20px;margin-left: 22px;">
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="itens" style="margin-left: -5px !important;"><b>Sua
+                                            Biblioteca</b></span>
+                                </div>
+                                <div class="col-md-1">
+                                    <img src="img/icons8-plus-math-48.png" alt="" style="width: 18px;">
+                                </div>
+                            </div>
+                            <div class="scroll mt-4 mb-2">
+                                <div class="playlist ">
+                                    <h6 class="white">Crie sua primeira playlist</h6>
+                                    <p class="white">É fácil, vamos te ajudar</p>
+                                    <button class="botao" type="button">Criar
+                                        playlist</button>
+                                </div>
+                                <div class="playlist mt-4">
+                                    <h6 class="white">Que tal seguir um podcast novo?</h6>
+                                    <p class="white">Avisamos você sobre novos episódios</p>
+                                    <button class="botao" type="button">Explore podcasts</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-2 palavras">
+                                <p style="margin-left: 17px;">Legal</p>
+                            </div>
+                            <div class="col-md-8 palavras">
+                                <p>Segurança e Controle de privacidade</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 palavras">
+                                <p style="margin-left: 17px;">Politica de privacidade</p>
+                            </div>
+                            <div class="col-md-2 palavras">
+                                <p style="margin-left: -5px;">Cookies</p>
+                            </div>
+                            <div class="col-md-4 palavras">
+                                <p style="margin-left: -5px;">Sobre anúcios</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 palavras">
+                                <p style="margin-left: 17px;">Acessibilidade</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 palavras">
+                                <p style="margin-left: 17px;">Cookies</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div onclick="acao()" class="col-md-8">
+                                <button type="button" class="portugues align-self-center h6 mt-2 mb-5">
+                                    <img src="img/icons8-globe-48.png" alt="" style="width: 20px; height: 20px;">
+                                    Portugês do Brasil
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Right -->
+            <div class="col-xxl-9 col-xl-8 col-lg-8 col-md-7 col-sm-6" style="margin-left: 380px;">
+                <div class="justify-content-end">
+                    <div class="row nav1 log fixed-top" style="margin-left: 380px;">
+                        <div class="col-xxl-2 col-xl-3 col-lg-2 mt-2 mb-3">
+                            <img class="align-self-center" src="img/icons8-left-78.png" alt=""
+                                style="width: 28px; height: 28px; margin-left:11px;">
+                            <img class="align-self-center " src="img/icons8-right-78.png" alt=""
+                                style="width: 28px; height: 28px; margin-left: 10px;">
+                        </div>
+                        
+                        <div class="col-xxl-2">
+                            <a href="#"
+                                class="align-self-center text-align-right text-decoration-none mt-3 gray inscreva">Inscreva-se</a>
+                            <button type="button" class="button align-self-center text-align-right mt-2">Entrar</button>
+                        </div>
+                    </div>
+                    <div class="row musicas">
+                        <div class="row">
+                            <hr class="mt-5">
+                            <div class="col-md-6 mt-4">
+                                <a href="#" class="align-self-center h4 text-decoration-none linha"
+                                    style="font-weight: bold; color: #ffff; margin-left: 10px;">Artistas populares</a>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <a href="#" class="align-self-center gray text-decoration-none mostrar"
+                                    style="font-weight: bold; position: absolute; right: 30px;">Mostrar tudo</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="d-flex mt-4" style="gap: 20px; margin-left: -20px;">
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="artista">
+                                            <div class="imgplay">
+                                                <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                            </div>
+                                            <img style="border-radius: 50%; width: 140px;"
+                                                src="img/henrique-e-juliano-expo-1.webp" alt="">
+                                            <p class="white limite mt-2">Henrique & Juliano</p>
+                                            <p class="gray" style="margin-top: -15px;">Artista</p>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="artista">
+                                            <div class="imgplay">
+                                                <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                            </div>
+                                            <img style="border-radius: 50%; width: 140px;"
+                                                src="img/channels4_profile.jpg" alt="">
+                                            <p class="white limite mt-2">Ze Neto & Cristiano</p>
+                                            <p class="gray" style="margin-top: -15px;">Artista</p>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="artista">
+                                            <div class="imgplay">
+                                                <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                            </div>
+                                            <img style="border-radius: 50%; width: 140px; " src="img/lulu.avif" alt="">
+                                            <p class="white limite mt-2">Luan Santana</p>
+                                            <p class="gray" style="margin-top: -15px;">Artista</p>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="artista">
+                                            <div class="imgplay">
+                                                <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                            </div>
+                                            <img style="border-radius: 50%; width: 140px;"
+                                                src="img/channels4_profile (1).jpg" alt="">
+                                            <p class="white limite mt-2">Ana Castela</p>
+                                            <p class="gray" style="margin-top: -15px;">Artista</p>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="artista">
+                                            <div class="imgplay">
+                                                <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                            </div>
+                                            <img style="border-radius: 50%; width: 140px;"
+                                                src="img/1_whatsapp_image_2024_01_30_at_16_54_48-34616303.jpeg" alt="">
+                                            <p class="white limite mt-2">Mc IG</p>
+                                            <p class="gray" style="margin-top: -15px;">Artista</p>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="artista">
+                                            <div class="imgplay">
+                                                <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                            </div>
+                                            <img style="border-radius: 50%; width: 140px;" src="img/jorge e mateus.jpg"
+                                                alt="">
+                                            <p class="white limite mt-2">Jorge & Mateus</p>
+                                            <p class="gray" style="margin-top: -15px;">Artista</p>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="artista">
+                                            <div class="imgplay">
+                                                <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                            </div>
+                                            <img style="border-radius: 50%; width: 140px;" src="img/mutilo.jpg" alt="">
+                                            <p class="white limite mt-2">Murilo Huff</p>
+                                            <p class="gray" style="margin-top: -15px;">Artista</p>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div mt-2>
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <a href="#" class="align-self-center h4 text-decoration-none linha"
+                                    style="font-weight: bold; color: #ffff;">Álbuns populares</a>
+                            </div mt-2>
+                            <div class="col-md-6 mt-3">
+                                <a href="#" class="align-self-center gray text-decoration-none mostrar"
+                                    style="font-weight: bold; position: absolute; right: 30px;">Mostrar tudo</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul class=" d-flex mt-4" style="gap: 20px;">
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/love.jpg" alt="">
+                                        <p class="white limite mt-2">love hotel</p>
+                                        <p class="gray limite" style="margin-top: -15px;">leftovermax</p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;"
+                                            src="img/Zé_Neto_&_Cristiano_-_2023_-_Escolhas.jpg" alt="">
+                                        <p class="white limite mt-2">Escolha, Vol.2 (Ao Vivo)</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Zé Neto & Cristiano</p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/luisa.jpg" alt="">
+                                        <p class="white limite mt-2">Escândalo Íntimo</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Luísa Sonza</p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/hit.jpg" alt="">
+                                        <p class="white limite mt-2">HIT ME HARD AND SOFT</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Billie Eilish</p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/raiz.jpg" alt="">
+                                        <p class="white limite mt-2">Raiz Goiânia (Ao Vivo)</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Luana Prado</p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/white.jpg" alt="">
+                                        <p class="white limite mt-2">White Noise</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Sleepy John</p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/ig.png" alt="">
+                                        <p class="white limite mt-2">Todo Mundo Odeia o IG</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Mc IG</p>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <a href="#" class="align-self-center h4 text-decoration-none linha"
+                                    style="font-weight: bold; color: #ffff;">Estações de rádio populares</a>
+                            </div mt-2>
+                            <div class="col-md-6 mt-3">
+                                <a href="#" class="align-self-center gray text-decoration-none mostrar"
+                                    style="font-weight: bold; position: absolute; right: 30px;">Mostrar tudo</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul class=" d-flex mt-4" style="gap: 20px;">
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/pt" alt="">
+                                        <p class="white limite mt-2">Rádio de EV</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Com Veason, obi, Cheatz e mais
+                                        </p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/grupo" alt="">
+                                        <p class="white limite mt-2">Rádio de Grupo Entre Elas</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Com Quinteto S.A., Grupo Samba
+                                            Delas,
+                                            Prettos e mais</p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/our" alt="">
+                                        <p class="white limite mt-2">Rádio de Our Psych</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Com Jason Gewalt, Tom Reev,
+                                            Hilfilter
+                                            e mais</p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/zero" alt="">
+                                        <p class="white limite mt-2">Rádio de Estação Zero Grau</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Com KEL, Geo Moreira, Banda
+                                            Nylon e
+                                            mais</p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/joão" alt="">
+                                        <p class="white limite mt-2">Rádio de João Gomes</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Com JG, Duo Franco, Esther
+                                            Marcos e
+                                            mais</p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/filhos" alt="">
+                                        <p class="white limite mt-2">Rádio de Filhos de Jorge</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Com Jau, Magary Lord, Negra
+                                            Cor e mais
+                                        </p>
+                                    </li>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <li class="artista">
+                                        <div class="imgplay">
+                                            <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                        </div>
+                                        <img style="border-radius: 8px; width: 140px;" src="img/brasil" alt="">
+                                        <p class="white limite mt-2">Rádio de Estação Brasil</p>
+                                        <p class="gray limite" style="margin-top: -15px;">Com Grupo ArtBiss, Bandinha do
+                                            Garrafão, Banda Canção e mais</p>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mt-3">
+                                <a href="#" class="align-self-center h4 text-decoration-none linha"
+                                    style="font-weight: bold; color: #ffff;">Paradas em destaque</a>
+                            </div mt-2>
+                        </div>
+                        <ul class=" d-flex mt-4" style="gap: 20px;">
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/indonesia.jpg" alt="">
+                                    <p class="white limite mt-2">50 que viralizaram - indonésia</p>
+                                    <p class="gray limite" style="margin-top: -15px;">Indonésia: seu relatório diário
+                                        das faixas
+                                        que viralizaram.</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/thailand.jpg" alt="">
+                                    <p class="white limite mt-2">50 que viralizaram - Tailândia</p>
+                                    <p class="gray limite" style="margin-top: -15px;">Tailândia: seu relatório diário
+                                        das faixas
+                                        que viralizaram.</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/viral usa.jpg" alt="">
+                                    <p class="white limite mt-2">50 que viralizaram - Estados Unidos</p>
+                                    <p class="gray limite" style="margin-top: -15px;">Estados Unidos: seu relatório
+                                        diário das
+                                        faixas que viralizaram.</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/viral.png" alt="">
+                                    <p class="white limite mt-2">50 que viralizaram - Mundo</p>
+                                    <p class="gray limite" style="margin-top: -15px;">Mundo: seu relatório diário das
+                                        faixas que
+                                        viralizaram.o</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/usa.jpg" alt="">
+                                    <p class="white limite mt-2">Top 50 - Estados Unidos</p>
+                                    <p class="gray limite" style="margin-top: -15px;">Estados Unidos: seu relatório
+                                        diário das
+                                        faixas mais tocadas no momento.</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/top 50.jpg" alt="">
+                                    <p class="white limite mt-2">Top 50 - Mundo</p>
+                                    <p class="gray limite" style="margin-top: -15px;">Mundo: seu relatório diário das
+                                        faixas
+                                        mais tocadas no momento.</p>
+                                </li>
+                            </a>
+                        </ul>
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <a href="#" class="align-self-center h4 text-decoration-none linha"
+                                    style="font-weight: bold; color: #ffff;">Playlistes do Spotify</a>
+                            </div mt-2>
+                            <div class="col-md-6 mt-3">
+                                <a href="#" class="align-self-center gray text-decoration-none mostrar"
+                                    style="font-weight: bold; position: absolute; right: 30px;">Mostrar tudo</a>
+                            </div>
+                        </div>
+                        <ul class=" d-flex mt-4" style="gap: 20px;">
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/musica boa.jpg" alt="">
+                                    <p class="white limite mt-2">Música Boal</p>
+                                    <p class="gray limite" style="margin-top: -15px;">Músicas sem rótulos!</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/top brasil.jpg" alt="">
+                                    <p class="white limite mt-2">Top Brasil</p>
+                                    <p class="gray limite" style="margin-top: -15px;">Matheus Fernandes, Matheus & Kauan
+                                        e os
+                                        maiores hits do país. O que tá bombando tá aqui.</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/preferidas.jpg" alt="">
+                                    <p class="white limite mt-2">Preferidas do PPA</p>
+                                    <p class="gray limite" style="margin-top: -15px;">As Musicas preferidas do PPA</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/forró.jpg" alt="">
+                                    <p class="white limite mt-2">Forró 2.0</p>
+                                    <p class="gray limite" style="margin-top: -15px;">As novidades do forró! Foto:
+                                        Wesley
+                                        Safadão, Felipe Amorim</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/eletronica.jpg" alt="">
+                                    <p class="white limite mt-2">Eletrönica 2024 Mais Tocadas</p>
+                                    <p class="gray limite" style="margin-top: -15px;">O Melhor do Eletrônico | Os
+                                        maiores HITS
+                                        da música Eletronica no Brasil em 2024 !! 📷: Alok</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/brasa.jpg" alt="">
+                                    <p class="white limite mt-2">Brasa</p>
+                                    <p class="gray limite" style="margin-top: -15px;">onde há 🔥 há BRASA! sentiu o
+                                        calor?
+                                        Foto:
+                                        Henry Freitas</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/melhores pagodes.jpg"
+                                        alt="">
+                                    <p class="white limite mt-2">Melhores Pagodes 2024</p>
+                                    <p class="gray limite" style="margin-top: -15px;">onde há 🔥 há BRASA! sentiu o
+                                        calor? Foto:
+                                        Henry Freitas</p>
+                                </li>
+                            </a>
+                        </ul>
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <a href="#" class="align-self-center h4 text-decoration-none linha"
+                                    style="font-weight: bold; color: #ffff;">Episódios em alta</a>
+                            </div mt-2>
+                            <div class="col-md-6 mt-3">
+                                <a href="#" class="align-self-center gray text-decoration-none mostrar"
+                                    style="font-weight: bold; position: absolute; right: 30px;">Mostrar tudo</a>
+                            </div>
+                        </div>
+                        <ul class=" d-flex mt-4" style="gap: 20px;">
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/te vejo.jpg" alt="">
+                                    <p class="white limite mt-2">Te Vejo Amanhã</p>
+                                    <p class="gray limite" style="margin-top: -15px;">Grupo HEINEKEN no Brasil</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/pod.jpg" alt="">
+                                    <p class="white limite mt-2">PodCália</p>
+                                    <p class="gray limite" style="margin-top: -15px;">Gigola</p>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="artista">
+                                    <div class="imgplay">
+                                        <img src="img/icons8-play-50.png" alt="" style="width: 24px;">
+                                    </div>
+                                    <img style="border-radius: 8px; width: 140px;" src="img/podpah.jpg" alt="">
+                                    <p class="white limite mt-2">VEM AÍ PODPAH DE VERÃO</p>
+                                    <p class="gray limite" style="margin-top: -15px;">PodPah</p>
+                                </li>
+                            </a>
+                        </ul>
+                        <footer class="row" style="padding-left: 20px;">
+                            <div class="col-md-2 mt-5 marginFooter">
+                                <p class="white mb-1 row">Empresa</p>
+                                <a href="#" class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Sobre</a>
+                                <a href="#" class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Empregos</a>
+                                <a href="#" class="gray mb-5 row col-md-12 text-decoration-none itenFooter">For the
+                                    Record</a>
+                            </div>
+                            <div class="col-md-2 mt-5 ">
+                                <p class="white mb-1 row">Comunidades</p>
+                                <a href="#" class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Para
+                                    Artistas</a>
+                                <a href="#"
+                                    class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Desenvolvedores</a>
+                                <a href="#"
+                                    class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Publicidade</a>
+                                <a href="#"
+                                    class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Investidores</a>
+                                <a href="#" class="gray row col-md-12 text-decoration-none itenFooter">Fornecedores</a>
+                            </div>
+                            <div class="col-md-2 mt-5 marginFooter">
+                                <p class="white mb-1 row">Links úteis</p>
+                                <a href="#" class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Suporte</a>
+                                <a href="#" class="gray row col-md-12 text-decoration-none itenFooter">Aplicativo móvel
+                                    grátis</a>
+                            </div>
+                            <div class="col-md-2 mt-5 mb-5 marginFooter text-decoration-none">
+                                <p class="white mb-1 row">Planos do Spotify</p>
+                                <a href="#" class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Premium
+                                    Individual</a>
+                                <a href="#" class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Premium
+                                    Duo</a>
+                                <a href="#" class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Premium
+                                    Família</a>
+                                <a href="#" class="gray mb-1 row col-md-12 text-decoration-none itenFooter">Premium
+                                    Universitário</a>
+                                <a href="#" class="gray row col-md-12 text-decoration-none itenFooter">Spotify Free</a>
+                            </div>
+                            <div class="col-md-2 mt-5 d-flex" style="margin-left: 120px;">
+                                <div class="row" style="gap: 10px;">
+                                    <div class="col-md-4 redes">
+                                        <img src="img/icons8-instagram.svg" alt=""
+                                            style="width: 20px; margin-top: 10px;">
+                                    </div>
+                                    <div class="col-md-4 redes">
+                                        <img src="img/icons8-twitter.svg" alt="" style="width: 20px; margin-top: 10px;">
+                                    </div>
+                                    <div class="col-md-4 redes">
+                                        <img src="img/icons8-facebook.svg" alt=""
+                                            style="width: 20px; margin-top: 10px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </footer>
+                        <hr class="mb-4">
+                        <div class="row">
+                            <div class="col-md-12 mb-5">
+                                <p class="gray " style="padding-left: 20px;">
+                                    © 2024 Spotify AB
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="mt-5">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row premiumGrates">
+            <div class="col-md-7">
+                <h6 class="white mt-2 mb-0">Testar o Premium de graça</h6>
+                <p class="white">Inscreva-se para curtir muúsica ilimitada e podcast só com alguns anúncios. Não precisa
+                    de cartão de crédito.</p>
+            </div>
+            <div class="col-md-5">
+                <button type="button" class="button1 align-self-center text-align-right mb-2">
+                    <h6>Inscreva-se grátis</h6>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-xl-12 modal" style="padding-top: 20px;">
+            <div class="row">
+                <div class="col-xl-11" style="padding-left: 30px;">
+                    <h4 class="white">Escolha um idioma</h4>
+                    <p class="white">Essa configuração atualiza o que você lê no open.spotify.com.
+                    </p>
+                </div>
+                <div onclick="fechar()" class="col-xl-1 x" style="margin-left: 36px;">
+                    <img src="img/icons8-x-48.png" alt="" style="width: 17px; ">
+                </div>
+                <hr>
+            </div>
+            <div class="row" style="padding-left: 20px; margin-right: 20px;">
+                <div class="col-xl-3 ">
+                    <div class="idioma">
+                        <h6 class="white mt-3">English</h6>
+                        <p class="gray mt-0">English</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white ">عربي مصري</h6>
+                        <p class="gray mt-0">Arabic (Egypt)</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Български</h6>
+                        <p class="gray">Bulgarian</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Català</h6>
+                        <p class="gray">Catalan</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Eλληνικά</h6>
+                        <p class="gray">Greek</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Español (Argentina)</h6>
+                        <p class="gray">Spanish (Argentina)</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="idioma">
+                        <h6 class="white mt-3">Afrikaans</h6>
+                        <p class="gray mt-0">Afrikaans</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">العَرَبِيَّة مغربي</h6>
+                        <p class="gray mt-0">Arabic (Morocco)</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">भोजपुरी</h6>
+                        <p class="gray mt-0">Bhojpuri</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Čeština</h6>
+                        <p class="gray mt-0">Czech</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">English</h6>
+                        <p class="gray mt-0">United Kingdom</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Español (México)</h6>
+                        <p class="gray mt-0">Spanish (Mexico)</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="idioma">
+                        <h6 class="white mt-3">አማርኛ</h6>
+                        <p class="gray mt-0">Amharic</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">العربية السعودية</h6>
+                        <p class="gray mt-0">Arabic (Saudi Arabia)</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">বাংলা</h6>
+                        <p class="gray mt-0">Bengali</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Dansk</h6>
+                        <p class="gray mt-0">Danish</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Español de España</h6>
+                        <p class="gray mt-0">European Spanish</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Eesti</h6>
+                        <p class="gray mt-0">Estonian</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="idioma mt-3">
+                        <h6 class="white">العَرَبِيَّة</h6>
+                        <p class="gray mt-0">Arabic</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Azərbaycanca</h6>
+                        <p class="gray mt-0">Azerbaijani</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Bosanski</h6>
+                        <p class="gray mt-0">Bosnian</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Deutsch</h6>
+                        <p class="gray mt-0">German</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Español de Latinoamérica</h6>
+                        <p class="gray mt-0">Latin American Spanish</p>
+                    </div>
+                    <div class="idioma">
+                        <h6 class="white">Euskara</h6>
+                        <p class="gray mt-0">Basque</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
